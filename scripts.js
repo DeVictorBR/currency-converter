@@ -93,17 +93,17 @@ const changeCurrency = () => {
   switch (selectTo.value) {
     case "Dolar":
       toCurrencyName.textContent = "Dólar americano";
-      toCurrencyImg.src = "/assets/dolar.svg";
+      toCurrencyImg.src = "./assets/dolar.svg";
       formatCurrencyWhenChange(0);
       break;
     case "Euro":
       toCurrencyName.textContent = "Euro";
-      toCurrencyImg.src = "/assets/euro.svg";
+      toCurrencyImg.src = "./assets/euro.svg";
       formatCurrencyWhenChange(0);
       break;
     case "Bitcoin":
       toCurrencyName.textContent = "Bitcoin";
-      toCurrencyImg.src = "/assets/bitcoin.png";
+      toCurrencyImg.src = "./assets/bitcoin.png";
       formatCurrencyWhenChange(0.0);
   }
 };

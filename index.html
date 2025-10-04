@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Conversor de Moedas - DevictorBR</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Conversor de Moedas</h1>
+    </header>
+    <main>
+      <label>
+        Converter <b>de</b>
+        <select id="convert-from">
+          <option value="Real">R$ <b>Real Brasileiro</b></option>
+        </select>
+      </label>
+
+      <label>
+        Converter <d>para</d>
+        <select id="convert-to">
+          <option value="Dolar">US$ <b>Dólar Americano</b></option>
+          <option value="Euro">€ <b>Euro</b></option>
+          <option value="Bitcoin">₿ <b>Bitcoin</b></option>
+        </select>
+      </label>
+
+      <label>
+        <d>Valor</d>
+        <input id="input-money" placeholder="R$ 10.000,00">
+      </label>
+
+      <button id="convert-btn" type="button">Converter</button>
+
+      <section>
+        <div class="currency-container">
+          <img src="/assets/real.svg" alt="Bandeira do Brasil" />
+          <p class="currency-name">Real</p>
+          <p class="currency-value" id="from-value-text">R$ 0,00</p>
+        </div>
+
+        <img class="arrow-img" src="/assets/flecha.png" alt="Seta" />
+
+        <div class="currency-container">
+          <img id="to-currency-img" src="/assets/dolar.svg" alt="Bandeira dos EUA" />
+          <p class="currency-name" id="to-currency-name">Dólar americano</p>
+          <p class="currency-value" id="to-value-text">US$ 0.00</p>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+<script src="/scripts.js"></script>
+
+</html>
